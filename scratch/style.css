@@ -1,8 +1,23 @@
+p.warning {
+  background-color: rgba(82, 82, 82, 0.89);
+  color: white;
+  font-style: bold;
+  padding: .5em 1em;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+p. warning::before{
+  content: "WARNING!: "
+}
 p {
   color: red;
   background-color: lightgrey;
   margin-left: 1em;
   margin-right: 1em;
+}
+p em {
+  font-style: normal;
+  text-decoration: underline;
 }
 
 p#footer {
@@ -10,8 +25,4 @@ p#footer {
   background-color: white;
   padding-top: .5em;
   margin-left: 0;
-}
-p em {
-  font-style: normal;
-  text-decoration: underline;
 }
