@@ -1,0 +1,11 @@
+h1, h2, h3 {
+  font-family: 'Notable', sans-serif;
+}
+
+p, ol li, ul li {
+  font-family: 'Cantata One', serif;
+}
+
+#cookingtime, #instruction, #for-the-filling {
+  font-family: 'Cutive Mono', monospace;
+}
