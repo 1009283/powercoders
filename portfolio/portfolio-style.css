@@ -12,7 +12,7 @@ h1, h2, h3 {
   font-family: 'Snippet', sans-serif;
 }
 
-ul li,ol li {
+ul li, ol li {
   font-family: 'Marko One', serif;
 }
 
@@ -50,19 +50,10 @@ ul li,ol li {
 
 #it-kenntnisse {
   position: absolute;
-  right: 33.1em;
+  right: 33.5em;
   top: 8em;
-  padding-left: 1em;
   width: 14em;
   min-height: 50vh;
-}
-
-#referenzen {
-  position: absolute;
-  top: 550px;
-  right: 17em;
-  width: 30.5em;
-  min-height: 10.5vh;
 }
 
 #interessen {
@@ -70,6 +61,14 @@ ul li,ol li {
   top: 550px;
   left: 0em;
   width: 14em;
+  min-height: 10.5vh;
+}
+
+#referenzen {
+  position: absolute;
+  top: 550px;
+  right: 17em;
+  width: 30.5em;
   min-height: 10.5vh;
 }
 
