@@ -6,6 +6,7 @@ div {
   border: 1px solid black;
   background-color: rgb(238, 238, 238);
   padding: .5em;
+
 }
 
 h1, h2, h3 {
@@ -16,11 +17,16 @@ ul li, ol li {
   font-family: 'Marko One', serif;
 }
 
+img {
+  position: relative;
+  left: 22px;
+}
+
 #lebenslauf {
   position: absolute;
   right: 0em;
   top: 8em;
-  width: 15em;
+  width: 14em;
   min-height: 50vh;
 }
 
@@ -29,15 +35,15 @@ ul li, ol li {
   left: 0em;
   top: 8em;
   width: 14em;
-  min-height: 50vh;
+  min-height: 30vh;
 }
 
 #ausbildung-schule {
   position: absolute;
   left: 17em;
   top: 8em;
-  width: 14em;
-  min-height: 50vh;
+  width: 50em;
+  min-height: 30vh;
 }
 
 #sprachen {
@@ -45,7 +51,7 @@ ul li, ol li {
   right: 17em;
   top: 8em;
   width: 14em;
-  min-height: 50vh;
+  min-height: 30vh;
 }
 
 #it-kenntnisse {
@@ -53,12 +59,12 @@ ul li, ol li {
   right: 33.5em;
   top: 8em;
   width: 14em;
-  min-height: 50vh;
+  min-height: 30vh;
 }
 
 #interessen {
   position: absolute;
-  top: 550px;
+  top: 500px;
   left: 0em;
   width: 14em;
   min-height: 10.5vh;
@@ -66,7 +72,7 @@ ul li, ol li {
 
 #referenzen {
   position: absolute;
-  top: 550px;
+  top: 500px;
   right: 17em;
   width: 30.5em;
   min-height: 10.5vh;
