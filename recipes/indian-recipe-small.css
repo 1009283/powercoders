@@ -1,0 +1,55 @@
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: rgb(69, 69, 69);
+  background-image: url("indian-recipe.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div {
+position: relative;
+top: 67px;
+}
+
+div#details, div#description, div#cooking-time, div#servings, div#ingredients {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bolder;
+}
+
+h1 {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  position: relative;
+  top: -118px;
+  left: 5.5em;
+  color: white;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  padding-top: 0;
+  padding-right: 11px;
+
+
+}
+h2, h3 {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  color: #40ea00;
+  border-bottom: 1px solid rgb(191, 191, 191);
+  margin: 0;
+}
+
+p, ol li, ul li {
+  font-family: 'Cantata One', serif;
+  color: white;
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+#cookingtime, #instruction, #for-the-filling {
+  font-family: 'Cutive Mono', monospace;
+}

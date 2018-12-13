@@ -1,11 +1,16 @@
+body {
+  position: relative;
+}
+
 h1, h2, h3 {
-  font-family: 'Notable', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 p, ol li, ul li {
   font-family: 'Cantata One', serif;
 }
 
-#cookingtime, #instruction, #for-the-filling {
+#cooking-time, #instruction, #for-the-filling {
   font-family: 'Cutive Mono', monospace;
 }
