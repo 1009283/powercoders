@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script src="setClass.js"></script>
     <meta charset="utf-8">
     <title>change_para_class</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -17,31 +18,5 @@
     <p class="warning">This is an example warning.</p>
 
     <p class="tip">This is an example tip.</p>
-    
-    <script>
-      // Javascript code goes here
-      console.log('My code is running');
-
-      function greet(name) {
-        console.log('Hello, ' + name);
-      }
-
-      function setClassWarning(event) {
-        let el = document.getElementById('mypara');
-        el.className = 'warning';
-      }
-
-      function setClassTip(event) {
-        let el = document.getElementById('mypara');
-        el.className = 'tip';
-      }
-
-      function clearClass(event) {
-        let el = document.getElementById('mypara');
-        el.className = '';
-      }
-
-
-    </script>
   </body>
 </html>
