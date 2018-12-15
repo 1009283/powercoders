@@ -22,6 +22,10 @@ img {
   left: 22px;
 }
 
+.lebenslauf {
+  font-style: italic;
+}
+
 #lebenslauf {
   position: absolute;
   right: 0em;
@@ -52,6 +56,10 @@ img {
   top: 8em;
   width: 14em;
   min-height: 30vh;
+}
+
+.deutsch, .persisch, .english, .pasthu, .urdu {
+  font-style: italic;
 }
 
 #it-kenntnisse {

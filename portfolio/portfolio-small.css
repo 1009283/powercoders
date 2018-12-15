@@ -10,7 +10,7 @@ h1, h2, h3 {
   margin-top: 1em;
   padding-top: 1em;
   font-family: 'Snippet', sans-serif;
-  
+
 }
 
 ul li, ol li {
@@ -19,4 +19,8 @@ ul li, ol li {
 
 h2, h3 {
   border-bottom: 1px solid rgb(191, 191, 191);
+}
+
+.deutsch, .persisch, .english, .paschtu, .urdu {
+  font-weight: bolder;
 }
