@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Cantata+One|Fira+Mono|Notable" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <script src="indian-recipe.js"></script>
   </head>
 
   <body>
@@ -47,9 +48,11 @@
     </div>
 
     <div id="ingredients">
-      <h3><strong>List of ingredients</strong></h3>
+      <h3><span id="hide-list" class="show" onclick="hide(event);">v</span>
+        <span id="show-list" class="hide" onclick="show(event);">&gt</span>
+        IngredientsList of ingredients</h3>
 
-      <ul>
+      <ul id="ingredient-list">
         <li>3 tablespoons olive oil</li>
         <li>1 small onion, chopped</li>
         <li>2 cloves garlic, minced</li>

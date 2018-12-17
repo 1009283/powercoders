@@ -4,6 +4,7 @@
     <title>Choclate pudding cake</title>
     <link rel="stylesheet" type="text/css" href="chocolate-cake-style.css">
     <link href="https://fonts.googleapis.com/css?family=Cantata+One|Fira+Mono|Notable" rel="stylesheet">
+    <script src="chocolate-pudding-cake.js"></script>
   </head>
 
   <body>
@@ -11,9 +12,11 @@
 
     <p><img src="choclate-pudding-cake.png" alt="choclate-cake"></p>
 
-    <h2>For the cake:</h2>
+    <h2> <span id="hide-list" class="show" onclick="hide(event);">v</span>
+        <span id="show-list" class="hide" onclick="show(event);">&gt</span>
+              For the cake:</h2>
 
-    <ul>
+    <ul id="ingredients-list">
       <li>3 large eggs</li>
       <li>1/2 cup demerara sugar or xylitol</li>
       <li>1 cup whole milk or vegetable</li>

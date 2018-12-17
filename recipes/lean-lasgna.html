@@ -4,6 +4,7 @@
     <title>Lasgna recipe</title>
     <link rel="stylesheet" type="text/css" href="lasgna-style.css">
     <link href="https://fonts.googleapis.com/css?family=Cantata+One|Fira+Mono|Notable" rel="stylesheet">
+    <script src="lasgna.js"></script>
   </head>
 
   <body>
@@ -27,9 +28,11 @@
   </div>
 
   <div id="Ingredients">
-    <h2>Ingredients</h2>
+    <h2><span id="hide-list" class="show" onclick="hide(event);">v</span>
+        <span id="show-list" class="hide" onclick="show(event);">&gt</span>
+      Ingredients</h2>
 
-    <ul>
+    <ul id="ingredient-list">
       <li>1/2 pound ground turkey</li>
       <li>1 (14.5-oz.) can tomato puree</li>
       <li>3 (8-oz.) cans no-salt-added tomato sauce</li>

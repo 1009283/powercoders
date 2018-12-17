@@ -40,6 +40,7 @@ h2, h3 {
   color: #40ea00;
   border-bottom: 1px solid rgb(191, 191, 191);
   margin: 0;
+  font-weight: bolder;
 }
 
 p, ol li, ul li {
@@ -51,4 +52,21 @@ p, ol li, ul li {
 
 #cookingtime, #instruction, #for-the-filling {
   font-family: 'Cutive Mono', monospace;
+}
+
+span.show {
+  display: inline-block;
+  width: 1em;
+}
+
+span.hide {
+  display: none;
+}
+
+ul.show {
+  display: block;
+}
+
+ul.hide {
+  display: none;
 }

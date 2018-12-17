@@ -9,3 +9,20 @@ p, ol li, ul li {
 #cookingtime, #instruction, #for-the-filling {
   font-family: 'Cutive Mono', monospace;
 }
+
+span.show {
+  display: inline-block;
+  width: 1em;
+}
+
+span.hide {
+  display: none;
+}
+
+ul.show {
+  display: block;
+}
+
+ul.hide {
+  display: none;
+}
