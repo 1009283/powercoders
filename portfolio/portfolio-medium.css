@@ -13,3 +13,7 @@ div {
 #container div {
   flex: 200px;
 }
+
+#persönliches {
+  padding-top: 0;
+}
