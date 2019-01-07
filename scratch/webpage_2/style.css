@@ -1,0 +1,156 @@
+* {box-sizing: border-box;}
+
+body {
+  background-color: rgba(232, 242, 245, 1);
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+}
+
+#heading li {
+  position: relative;
+  left: 14%;
+  padding: 59px;
+  display: inline;
+}
+
+.heading_lists {
+  padding-top: 122px;
+  padding-bottom: 25px;
+  font-size: 18px;
+  color: white;
+  background-color: #043669;
+}
+
+.logo {
+  margin-left: 40px;
+  position: absolute;
+  top: 1%;
+}
+
+#heading li:hover {
+  border-bottom: 2px solid white;
+  padding: 59px;
+}
+
+#face_insta {
+  top: 7em;
+  position: absolute;
+  left: 93.5%;
+  bottom: 12px;
+  float: right;
+  margin-right: 10px;
+
+}
+
+#main_content {
+  opacity: .33%;
+  height: 380px;
+  background-attachment: fixed;
+  background: url(background.png);
+  background-size: cover;
+  position: relative;
+  top: -34px;
+  padding-bottom: 15%;
+}
+
+#content {
+  width: 50em;
+  margin: 0 auto;
+}
+
+ h1 {
+  position: relative;
+  top: 39px;
+  left: -7px;
+  display: block;
+  font-size: 50px;
+  color: #043669;
+}
+
+#content ul {
+  position: relative;
+  top: 47px;
+  text-align: left;
+  font-size: 14px;
+  float: left;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+}
+
+#content ul li {
+  text-align: center;
+  background-color: #043669;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  color: white;
+}
+
+#content_para {
+  width: 35%;
+  font-size: 20px;
+  color: #043669;
+  position: absolute;
+  left: 28em;
+  top: 6em;
+}
+
+#second_content {
+  display: flex;
+  height: 300px;
+  width: 50em;
+  margin: 0 auto;
+}
+
+#second_content div {
+  height: 153px;
+  padding: 0 5px;
+  width: 200px;
+}
+
+#second_content h3 {
+  text-align: center;
+  color: white;
+  padding: 3px 15px;
+  border-radius: 5px;
+}
+#second_content h3.green {
+  background-color: rgb(90, 138, 22);
+}
+
+#second_content h3.yello {
+  background-color: rgb(233, 152, 68);
+}
+
+#second_content p {
+  width: 9em;
+  text-align: center;
+  color: #043669;
+}
+
+#second_content a {
+  text-decoration: none;
+  display: block;
+  color: #043669;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #cfeef9;
+  padding: 3px 15px;
+}
+
+footer {
+  height: 100px;
+  background-color: #043669;
+}
+
+footer div {
+  list-style: none;
+  position: absolute;
+  color: white;
+  right: 1em;
+}
