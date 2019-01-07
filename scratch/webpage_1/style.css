@@ -35,9 +35,10 @@ h1 {
 }
 
 #heading img {
+  margin-left: 60px;
   position: absolute;
   left: 2em;
-  width: 11%;
+  width: 9%;
 }
 
 #left_content {
@@ -100,16 +101,8 @@ left: 18px;
   min-height: 300px;
 }
 
-#right_content .column1 img {
+#right_content .column1 img, .column2 img, .column3 img  {
   width: 100%
-}
-
-#right_content .column2 img {
-  width: 100%;
-}
-
-#right_content .column3 img {
-  width: 100%;
 }
 
 #right_content p {
@@ -122,14 +115,15 @@ left: 18px;
   line-height: 2;
 }
 
-p.title1 {
+p.title1, .title2, .title3  {
+  font-size: 20px;
   color: rgb(115, 103, 95);
   margin-bottom: 9px;
   line-height: 1.5;
   display: block;
-  border-bottom: 1px solid rgb(191, 191, 191);
   font-weight: bolder;
 }
+
 .date {
   color: rgb(115, 103, 95);
   background-color: rgb(236, 235, 227);
@@ -137,27 +131,11 @@ p.title1 {
   padding-left: 7px;
   padding-right: 7px;
 }
-p.title2 {
-  color: rgb(115, 103, 95);
-  margin-bottom: 9px;
-  line-height: 1.5;
-  display: block;
-  border-bottom: 1px solid rgb(191, 191, 191);
-  font-weight: bolder;
-}
-
-p.title3 {
-  color: rgb(115, 103, 95);
-  margin-bottom: 9px;
-  line-height: 1.5;
-  display: block;
-  border-bottom: 1px solid rgb(191, 191, 191);
-  font-weight: bolder;
-}
 
 p {
   color: rgb(111, 103, 87);
 }
+
 #right_content .column2 {
   margin-left: 10px;
   margin-right: 10px;
@@ -169,6 +147,11 @@ p {
   width: 100%;
   min-height: auto;
 
+}
+
+#footer_position {
+  float: right;
+  width: 70%;
 }
 
 #footer_position ul {
@@ -183,8 +166,4 @@ p {
   position: relative;
   top: 41px;
   right: 15em;
-}
-#footer_position {
-  float: right;
-  width: 70%;
 }
