@@ -127,6 +127,12 @@ ul {
   background-color: rgb(233, 152, 68);
 }
 
+#colured_bullets {
+  position: absolute;
+  bottom: 5em;
+  list-style: square;
+
+}
 #second_content p {
   width: 9em;
   text-align: center;
