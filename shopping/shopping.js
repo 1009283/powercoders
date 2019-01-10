@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     let li = createNewListItem(inputBox.value);
     let ul = document.querySelector('ul');
     ul.appendChild(li);
+    inputBox.value = '';
   });
 
   document.querySelector('input').addEventListener('keyup',function (event) {
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       let li = createNewListItem(inputBox.value);
       let ul = document.querySelector('ul');
       ul.appendChild(li);
+      inputBox.value = '';
     }
   });
 });
