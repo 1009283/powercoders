@@ -5,6 +5,9 @@ is being loaded take the parameter called function.
 
 Line 2 creates a variable called inputBox which has a value with a method type called
 get Element by id, it has only one parameter that we declare it inside the string.
+ATTENTION! Creating a variable with "const" means that we are allow to create once
+that variable and not more but with "let" we can create it for many times and
+giving it different values in different documents.
 
 
 Line 3 creates a variable called shoppingList which has a value with a method type called
