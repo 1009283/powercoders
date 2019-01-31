@@ -1,14 +1,13 @@
 /**
  * Creates and returns an 'li' element for inclusion in the shopping list.
  *
- * @param {string} itemName Name of the item to add to the list
- * @param {string} quantity Quantity of the item to append to the list
+ * @param {{name: string, quantity: string}} item Item to append to the list
  * @returns {HTMLElement} li element
  */
-function createNewListItem(itemName, quantity) {
+function createNewListItem(item) {
   const listItem = document.createElement('li');
   const span = document.createElement('span');
-  const spanText = document.createTextNode(itemName);
+  const spanText = document.createTextNode(item.name);
   const deleteButton = document.createElement('i');
   deleteButton.addEventListener('click', function (event) {
     listItem.remove();
@@ -19,10 +18,10 @@ function createNewListItem(itemName, quantity) {
 
   listItem.appendChild(span);
   span.appendChild(spanText);
-  if (quantity !== '') {
+  if (item.quantity !== '') {
     listItem.appendChild(document.createTextNode(' '));
     const quantityText = document.createElement('span');
-    quantityText.textContent = `(${quantity})`;
+    quantityText.textContent = `(${item.quantity})`;
     listItem.appendChild(quantityText);
   }
   listItem.appendChild(deleteButton).className = 'fas fa-trash';
@@ -39,7 +38,12 @@ function domContentLoaded() {
   addItemButton.addEventListener('click', function (event) {
     const trimmedValue = inputBox.value.trim();
 
-    shoppingList.appendChild(createNewListItem(trimmedValue, inputQuantity.value.trim()));
+    const item = {
+      name: trimmedValue,
+      quantity: inputQuantity.value.trim()
+    };
+
+    shoppingList.appendChild(createNewListItem(item));
     inputBox.value = '';
     inputQuantity.value = '';
     inputBox.focus();
@@ -81,11 +85,17 @@ function onkeyup() {
     return;
   }
 
-  shoppingList.appendChild(createNewListItem(trimmedValue, inputQuantityValue));
+  const item = {
+    name: trimmedValue,
+    quantity: inputQuantityValue
+  };
+
+  shoppingList.appendChild(createNewListItem(item));
   inputBox.value = '';
+  inputQuantity.value = '';
   addItemButton.disabled = true;
   clearListButton.disabled = false;
-
+  inputBox.focus();
 }
 
 if (document.readyState === 'loading') {
