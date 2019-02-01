@@ -9,17 +9,15 @@ function ShoppingListItem(name, quantity) {
   this.name = name;
   this.quantity = quantity;
 }
-
 /**
  * Creates and returns an 'li' element for inclusion in the shopping list.
  *
- * @param {ShoppingListItem} item Item to append to the list
  * @returns {HTMLElement} li element
  */
-function createNewListItem(item) {
+ShoppingListItem.prototype.toListItem = function() {
   const listItem = document.createElement('li');
   const span = document.createElement('span');
-  const spanText = document.createTextNode(item.name);
+  const spanText = document.createTextNode(this.name);
   const deleteButton = document.createElement('i');
   deleteButton.addEventListener('click', function (event) {
     listItem.remove();
@@ -30,10 +28,10 @@ function createNewListItem(item) {
 
   listItem.appendChild(span);
   span.appendChild(spanText);
-  if (item.quantity !== '') {
+  if (this.quantity !== '') {
     listItem.appendChild(document.createTextNode(' '));
     const quantityText = document.createElement('span');
-    quantityText.textContent = `(${item.quantity})`;
+    quantityText.textContent = `(${this.quantity})`;
     listItem.appendChild(quantityText);
   }
   listItem.appendChild(deleteButton).className = 'fas fa-trash';
@@ -49,9 +47,10 @@ function domContentLoaded() {
 
   addItemButton.addEventListener('click', function (event) {
     const trimmedValue = inputBox.value.trim();
+    const inputQuantityValue = inputQuantity.value.trim();
     const item = new ShoppingListItem(trimmedValue, inputQuantityValue);
 
-    shoppingList.appendChild(createNewListItem(item));
+    shoppingList.appendChild(item.toListItem());
     inputBox.value = '';
     inputQuantity.value = '';
     inputBox.focus();
@@ -95,7 +94,7 @@ function onkeyup() {
 
   const item =  new ShoppingListItem(trimmedValue, inputQuantityValue);
 
-  shoppingList.appendChild(createNewListItem(item));
+  shoppingList.appendChild(item.toListItem());
   inputBox.value = '';
   inputQuantity.value = '';
   addItemButton.disabled = true;
