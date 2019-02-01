@@ -1,7 +1,19 @@
 /**
+ * Represents an item in the shopping list.
+ *
+ * @param name {string} Name of the item
+ * @param quantity {string} Quantity of the item
+ * @constructor
+ */
+function ShoppingListItem(name, quantity) {
+  this.name = name;
+  this.quantity = quantity;
+}
+
+/**
  * Creates and returns an 'li' element for inclusion in the shopping list.
  *
- * @param {{name: string, quantity: string}} item Item to append to the list
+ * @param {ShoppingListItem} item Item to append to the list
  * @returns {HTMLElement} li element
  */
 function createNewListItem(item) {
@@ -37,11 +49,7 @@ function domContentLoaded() {
 
   addItemButton.addEventListener('click', function (event) {
     const trimmedValue = inputBox.value.trim();
-
-    const item = {
-      name: trimmedValue,
-      quantity: inputQuantity.value.trim()
-    };
+    const item = new ShoppingListItem(trimmedValue, inputQuantityValue);
 
     shoppingList.appendChild(createNewListItem(item));
     inputBox.value = '';
@@ -85,10 +93,7 @@ function onkeyup() {
     return;
   }
 
-  const item = {
-    name: trimmedValue,
-    quantity: inputQuantityValue
-  };
+  const item =  new ShoppingListItem(trimmedValue, inputQuantityValue);
 
   shoppingList.appendChild(createNewListItem(item));
   inputBox.value = '';
