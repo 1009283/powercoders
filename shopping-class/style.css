@@ -1,0 +1,88 @@
+body {
+  position: relative;
+  background-image: url(background_image.png);
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: left;
+}
+
+#header {
+  position: relative;
+  top: 1em;
+}
+img {
+  position: relative;
+  top: 2em;
+  left: 6em;
+}
+h1  {
+  margin: 0 auto;
+  color: royalblue;
+  position: relative;
+  left: 2em;
+  font-size: 8em;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-style: normal;
+  font-weight: normal;
+}
+
+div {
+  position: absolute;
+  top: 15em;
+}
+
+div label {
+  margin-right: 27px;
+  color: white;
+  background-color: royalblue;
+  font-family: 'Helvetica Neue Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Neue Light'), url('HelveticaNeueLight.woff') format('woff');
+  border: .5px solid rgba(109, 155, 247, 1);
+  padding: 6px;
+  border-radius: 22px;
+}
+
+button i {
+  font-size: 3em;
+}
+
+label {
+  font-size: 2em;
+}
+
+input {
+  font-size: 2em;
+}
+
+ul {
+  text-align: center;
+  width: 45%;
+  display: inline-block;
+  position: relative;
+  top: 140px;
+}
+ul li {
+  height: 30px;
+  width: 83%;
+  margin-top: 6px;
+  border-radius: 7px;
+  border: 1px solid #969696;
+  padding: 7px;
+  font-size: 1.5em;
+  font-family: 'Caveat', cursive;
+  list-style: none;
+}
+
+ul li span  {
+  float: left;
+  margin-right: 13em;
+}
+
+ul li i {
+  float: right;
+}
