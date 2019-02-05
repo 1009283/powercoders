@@ -5,6 +5,7 @@ class View {
    * @param controller {!Controller} App controller
    */
   constructor(model, controller) {
+
     console.log('View ready!');
 
     /** @private {!Model} App data model */
@@ -12,5 +13,19 @@ class View {
 
     /** @private {!Controller} App controller */
     this.controller_ = controller;
+
+    /** @private {!HTMLElement} Shopping list element */
+    this.shoppingList_ = document.querySelector('ul');
+  }
+  update() {
+    while (this.shoppingList_.firstChild) {
+      this.shoppingList_.firstChild.remove();
+    }
+
+    for (let i = 0; i < this.model_.items.length; i++) {
+      const item = this.model_.items[i];
+      const listItem = item.toListItem();
+      this.shoppingList_.appendChild(listItem);
+    }
   }
 }
