@@ -9,6 +9,11 @@
   "author": "Bismillah Frothan",
   "license": "ISC",
   "dependencies": {
+    "grunt-contrib-uglify-es": "^3.3.0",
+    "save-dev": "^2.0.0",
     "uglify-es": "^3.3.9"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3"
   }
 }
