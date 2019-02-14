@@ -1,5 +1,7 @@
+@position-relative: relative;
+@font-size-input: 2em;
 body {
-  position: relative;
+  position: @position-relative;
   background-image: url(../static/background_image.png);
   background-attachment: fixed;
   background-size: cover;
@@ -7,18 +9,18 @@ body {
 }
 
 #header {
-  position: relative;
+  position: @position-relative;
   top: 1em;
 }
 img {
-  position: relative;
+  position: @position-relative;
   top: 2em;
   left: 6em;
 }
 h1  {
   margin: 0 auto;
   color: royalblue;
-  position: relative;
+  position: @position-relative;
   left: 2em;
   font-size: 8em;
   padding: 5px;
@@ -52,11 +54,11 @@ button i {
 }
 
 label {
-  font-size: 2em;
+  font-size: @font-size-input;
 }
 
 input {
-  font-size: 2em;
+  font-size: @font-size-input;
 }
 
 ul {
