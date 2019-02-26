@@ -12,6 +12,7 @@ class App extends Component {
     };
 
     this.onAddItem = this.onAddItem.bind(this);
+    this.onClearList = this.onClearList.bind(this);
   }
 
   onAddItem(name, quantity) {
@@ -21,11 +22,16 @@ class App extends Component {
     }
     this.setState((prevState) => ({items: prevState.items.concat(item)}));
   }
+
+  onClearList() {
+    this.setState({items: []})
+  }
+
   render() {
     return (
       <div>
         <ItemInput onAddItem={this.onAddItem}/>
-        <ClearList/>
+        <ClearList onClearList={this.onClearList}/>
         <ShoppingList items={this.state.items}/>
        </div>
     );
