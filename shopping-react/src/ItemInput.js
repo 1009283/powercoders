@@ -27,6 +27,7 @@ class ItemInput extends Component {
                placeholder="Type something to buy" />
         <button
             onClick={() => this.props.onAddItem(this.state.item.trim(), this.state.quantity.trim())}
+            disabled={this.state.item.trim() === ''}
             id="add">Add item</button>
       </div>
     );
